@@ -1,0 +1,111 @@
+// watcher code
+// less-watch-compiler less css index.less
+
+.container {
+
+  .hero-container {
+    background-color: @mon-blue;
+    width: 100%;
+
+    .logobox {
+      img {
+        width: 175px;
+        height: 180px;
+
+        @media @mobile {
+          position: relative;
+          left: 160px;
+          padding-bottom: 5%;
+        }
+      }
+    }
+
+    .hero-text {
+      h1 {
+        color: white;
+        font-size: 5rem;
+        text-align: center;
+        padding-bottom: 3%;
+
+        @media @mobile {
+          font-size: 3.5rem;
+        }
+      }
+    }
+
+    .monsters-container {
+      .flex-it-up(row);
+      flex-wrap: nowrap;
+      padding-bottom: 5%;
+
+      .monster {
+        width: 25%;
+      }
+    }
+
+    .join-btn {
+      text-align: center;
+      padding-bottom: 4%;
+      
+      button {
+        box-shadow: 0px 19px 14px -7px #3e7327;
+        background:linear-gradient(to bottom, #77b55a 5%, #72b352 100%);
+        background-color:#77b55a;
+        border-radius:9px;
+        border:2px solid #4b8f29;
+        display:inline-block;
+        cursor:pointer;
+        color:#ffffff;
+        font-family:Arial;
+        font-size:28px;
+        font-weight:bold;
+        padding:10px 76px;
+        text-decoration:none;
+      }
+    }
+  }
+
+  .info-boxes {
+    .flex-it-up(row);
+
+    @media @mobile {
+      .flex-it-up(column);
+    }
+
+    .box {
+      width: 33.4%;
+      padding: 5%;
+
+      @media @mobile {
+        width: 100%;
+        padding: 10%;
+      }
+
+      .icon {
+        text-align: center;
+        padding: 8%;
+        color: white;
+
+        .fas, .fab {
+          font-size: 5em;
+        }
+      }
+
+      .content {
+        font-size: 2em;
+        padding: 2%;
+        color: white;
+      }
+    }
+
+    .one {
+      background-color: @mon-one;
+    }
+    .two {
+      background-color: @mon-two;
+    }
+    .three {
+      background-color: @mon-three;
+    }
+  }
+}
